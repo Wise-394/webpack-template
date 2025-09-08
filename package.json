@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --config webpack.dev.js --open --hot",
+    "dev": "webpack serve --config webpack.dev.js --open --hot",
     "build": "webpack --config webpack.prod.js",
-    "dev": "webpack serve --config webpack.dev.js",
-    "start": "npm run dev"
+    "clean": "rm -rf dist",
+    "preview": "npx serve dist"
   },
   "repository": {
     "type": "git",

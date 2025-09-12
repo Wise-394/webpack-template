@@ -8,7 +8,7 @@
     "dev": "webpack serve --config webpack.dev.js --open --hot",
     "build": "webpack --config webpack.prod.js",
     "clean": "rm -rf dist",
-    "preview": "npx serve dist"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -22,15 +22,25 @@
   },
   "homepage": "https://github.com/Wise-394/webpack-template#readme",
   "devDependencies": {
+    "@eslint/css": "^0.11.0",
+    "@eslint/js": "^9.35.0",
+    "@eslint/json": "^0.13.2",
+    "@eslint/markdown": "^7.2.0",
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.2",
+    "eslint": "^9.35.0",
+    "globals": "^16.4.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.4",
     "mini-css-extract-plugin": "^2.9.4",
+    "prettier": "3.6.2",
     "style-loader": "^4.0.0",
     "webpack": "^5.101.3",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2",
     "webpack-merge": "^6.0.1"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

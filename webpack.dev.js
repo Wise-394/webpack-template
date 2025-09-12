@@ -10,7 +10,7 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"], // Inline CSS for faster reload
+        use: ["style-loader", "css-loader"],
       },
     ],
   },
@@ -18,6 +18,6 @@ module.exports = merge(common, {
   devServer: {
     watchFiles: ["./src/template.html"],
     hot: true,
-    open: true, 
+    open: true,
   },
 });

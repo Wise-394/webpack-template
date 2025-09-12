@@ -26,10 +26,7 @@ module.exports = merge(common, {
   ],
 
   optimization: {
-    minimizer: [
-      `...`, // keep default minimizers (like Terser for JS)
-      new CssMinimizerPlugin(),
-    ],
+    minimizer: [`...`, new CssMinimizerPlugin()],
     splitChunks: {
       chunks: "all",
     },

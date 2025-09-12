@@ -6,7 +6,7 @@ module.exports = {
   entry: "./src/index.js",
 
   output: {
-    filename: "bundle.js", // Will be overridden in prod with hashing
+    filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
